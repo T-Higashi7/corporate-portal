@@ -39,7 +39,8 @@ class RegisterController extends Controller
      * 2021 5.23 guest を authに変更
      */
     public function __construct()
-    {
+    {   
+        
         $this->middleware('auth');
     }
 
