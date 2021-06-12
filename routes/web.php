@@ -27,9 +27,9 @@ Route::group(['middleware' => ['auth', 'can:admin']], function () {
    return view('admin');
  
  });
- 
- Route::post('/register', 'Auth\RegisterController@create'); 
- 
+
+ Route::post('/register', 'Auth\RegisterController@register'); 
+
  
  
 });
