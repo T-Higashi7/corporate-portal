@@ -369,6 +369,8 @@ Docs & License: https://fullcalendar.io/
 
 // no public types yet. when there are, export from:
 // import {} from './api-type-deps'
+
+
 var EventSourceApi = /** @class */ (function () {
     function EventSourceApi(context, internalEventSource) {
         this.context = context;
@@ -9783,6 +9785,42 @@ var unmountComponentAtNode = FullCalendarVDom.unmountComponentAtNode;
 /* eslint-enable */
 
 
+
+
+/***/ }),
+
+/***/ "./node_modules/@fullcalendar/core/locales/ja.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@fullcalendar/core/locales/ja.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var ja = {
+  code: 'ja',
+  buttonText: {
+    prev: '前',
+    next: '次',
+    today: '今日',
+    month: '月',
+    week: '週',
+    day: '日',
+    list: '予定リスト',
+  },
+  weekText: '週',
+  allDayText: '終日',
+  moreLinkText: function(n) {
+    return '他 ' + n + ' 件'
+  },
+  noEventsText: '表示する予定はありません',
+};
+
+exports.default = ja;
 
 
 /***/ }),
@@ -38353,7 +38391,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fullcalendar/timegrid */ "./node_modules/@fullcalendar/timegrid/main.js");
 /* harmony import */ var _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fullcalendar/interaction */ "./node_modules/@fullcalendar/interaction/main.js");
 /* harmony import */ var _fullcalendar_moment_timezone__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fullcalendar/moment-timezone */ "./node_modules/@fullcalendar/moment-timezone/main.js");
+/* harmony import */ var _fullcalendar_core_locales_ja__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fullcalendar/core/locales/ja */ "./node_modules/@fullcalendar/core/locales/ja.js");
+/* harmony import */ var _fullcalendar_core_locales_ja__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_fullcalendar_core_locales_ja__WEBPACK_IMPORTED_MODULE_4__);
 // resources/js/fullcalendar.js
+
 
 
 

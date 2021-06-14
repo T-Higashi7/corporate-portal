@@ -14,12 +14,21 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/fullcalendar.js') }}" defer></script>
+    <script src="{{ asset('js/calendar.js') }}" defer></script>
+    <script src='fullcalendar/core/locales/ja.js'></script>
+    
     
     <meta charset="utf-8">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/fullcalendar.css') }}" rel="stylesheet">
 
 </head>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+
+</script>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -68,6 +77,7 @@
             </div>
         </nav>
         <div id="calendar"></div>
+        
     
 </body>
 
