@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="ja">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,9 +13,11 @@
     
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/fullcalendar.js') }}" defer></script>
     
     <meta charset="utf-8">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/fullcalendar.css') }}" rel="stylesheet">
 
 </head>
 
@@ -64,6 +67,7 @@
                 </div>
             </div>
         </nav>
+        <div id="calendar"></div>
     
 </body>
 
