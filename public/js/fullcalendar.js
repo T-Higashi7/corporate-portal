@@ -38406,7 +38406,13 @@ document.addEventListener('DOMContentLoaded', function () {
     plugins: [_fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_1__["default"], _fullcalendar_moment_timezone__WEBPACK_IMPORTED_MODULE_3__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_2__["default"]],
     timeZone: 'Asia/Tokyo',
     // momentTimezonePlugin
-    defaultView: 'timeGridWeek',
+    initialView: 'timeGridWeek',
+    locales: [_fullcalendar_core_locales_ja__WEBPACK_IMPORTED_MODULE_4___default.a],
+    locale: 'ja',
+    slotMinTime: '08:00:00',
+    slotMaxTime: '18:00:00',
+    contentHeigh: 'auto',
+    height: 'auto',
     events: []
   });
   calendar.render();

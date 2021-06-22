@@ -3,7 +3,7 @@ import { Calendar } from '@fullcalendar/core'
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import momentTimezonePlugin from '@fullcalendar/moment-timezone';
-
+import jaLocale from '@fullcalendar/core/locales/ja';
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -13,10 +13,17 @@ document.addEventListener('DOMContentLoaded', function () {
     allDaySlot: false,
     plugins: [timeGridPlugin, momentTimezonePlugin, interactionPlugin],
     timeZone: 'Asia/Tokyo', // momentTimezonePlugin
-    defaultView: 'timeGridWeek',
-
+    initialView: 'timeGridWeek',
+    locales: [ jaLocale],
+    locale: 'ja',
+    
+    slotMinTime: '08:00:00',
+    slotMaxTime: '18:00:00',
+    contentHeigh: 'auto',
+    height: 'auto',
     events: []
   });
-
+  
   calendar.render();
 });
+
