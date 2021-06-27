@@ -20,14 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
     slotMaxTime: '18:00:00',
     contentHeigh: 'auto',
     height: 'auto',
-    googleCalendarApiKey: 'AIzaSyDq0vOKEt3DRYR1Fz9-_hEDKENAwuh7cdI',
      eventSources: [
-        {
-          googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com',
-          className: 'event_holiday'
-        },
-        {
-          googleCalendarId: 'hoge-na-calendar@group.calendar.google.com',
+        { 
+          googleCalendarApiKey: 'AIzaSyDq0vOKEt3DRYR1Fz9-_hEDKENAwuh7cdI',
+          googleCalendarId: 'japanese__ja@holiday.calendar.google.com',
+          display: 'background',
         }
       ]
   });
