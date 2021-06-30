@@ -13,9 +13,10 @@ class CreateEventsTable extends Migration
      */
     public function up()
     {
-        chema::create('events', function (Blueprint $table) {
+        Schema::create('events', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->date('start');
+            $table->date('end');
             $table->string('title', 100);
             $table->string('participant', 100);
             $table->string('inputperson', 100);

@@ -38413,6 +38413,7 @@ document.addEventListener('DOMContentLoaded', function () {
     slotMaxTime: '18:00:00',
     contentHeigh: 'auto',
     height: 'auto',
+    events: '/index',
     eventSources: [{
       googleCalendarApiKey: 'AIzaSyDq0vOKEt3DRYR1Fz9-_hEDKENAwuh7cdI',
       googleCalendarId: 'japanese__ja@holiday.calendar.google.com',

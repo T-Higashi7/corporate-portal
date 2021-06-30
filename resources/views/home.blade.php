@@ -69,8 +69,19 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-        <div id="calendar"></div>
+    </nav>
+    
+    <form method="POST" action="{{ route('/store') }}">
+           @csrf
+        <input type="text" name="title">
+ 　　　 　 <input type="date" name="start">
+        <input type="end" name="end">
+        <input type="text" name="participant">
+        <input type="text" name="inputperson">
+        <button type="submit">登録</button>
+    </form>
+    
+    <div id="calendar"></div>
         
     
 </body>

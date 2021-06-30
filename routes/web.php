@@ -17,7 +17,11 @@ Route::get('/', function () {
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/index', 'EventController@index');
+Route::post('/store', 'EventController@store);
+
 Auth::routes();
+
 
 
 /*管理者のみ許可
@@ -29,7 +33,8 @@ Route::group(['middleware' => ['auth', 'can:admin']], function () {
  });
 
  Route::post('/register', 'Auth\RegisterController@register'); 
-
  
  
 });
+
+
