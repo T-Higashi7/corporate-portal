@@ -70,12 +70,13 @@
                 </div>
             </div>
     </nav>
-    
-    <form method="POST" action="{{ route('/store') }}">
+    <form action="{{ action('EventController@store') }}" method="post" enctype="multipart/form-data">
            @csrf
         <input type="text" name="title">
  　　　 　 <input type="date" name="start">
-        <input type="end" name="end">
+ 　　　 　 <input type="time" name="starttime">
+ 　　　 　 <input type="date" name="end">
+        <input type="time" name="endtime">
         <input type="text" name="participant">
         <input type="text" name="inputperson">
         <button type="submit">登録</button>
